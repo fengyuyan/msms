@@ -1,7 +1,7 @@
 <RCC>
   <qresource prefix="/">
-    <file>res/images/check.png</file>
-    <file>res/images/app.png</file>
-    <file>res/images/edit_clear.png</file>
+    <file>res/check.png</file>
+    <file>res/app.png</file>
+    <file>res/edit_clear.png</file>
   </qresource>
 </RCC>
