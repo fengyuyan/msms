@@ -19,7 +19,7 @@ class ButtonLineEdit(QtGui.QLineEdit):
 
         self.button = QtGui.QToolButton(self)
         self.button.setObjectName('tool_button')
-        clear_icon = QtGui.QIcon(":/res/images/edit_clear.png")
+        clear_icon = QtGui.QIcon(":/res/edit_clear.png")
         self.button.setIcon(clear_icon)
         # self.button.setStyleSheet('border: 0px; padding: 0px;')
         self.button.setCursor(QtCore.Qt.ArrowCursor)

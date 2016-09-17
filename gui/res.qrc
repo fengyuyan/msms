@@ -3,5 +3,11 @@
     <file>res/check.png</file>
     <file>res/app.png</file>
     <file>res/edit_clear.png</file>
+    <file>res/add.png</file>
+    <file>res/delete.png</file>
+    <file>res/table_add.png</file>
+    <file>res/save_all.png</file>
+    <file>res/trash_can.png</file>
+    <file>res/category.png</file>
   </qresource>
 </RCC>

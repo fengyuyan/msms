@@ -1,0 +1,32 @@
+{
+  "File Type": "Product Information File",
+  "Creation Date": "05-19-2016, 14:55:48", 
+  "Version": "2016.1",
+  "Info":
+  {
+    "Name": "MK Bag",
+    "Brand": "MK",
+    "Store/Link": "Target",
+    "Purchase Price ($)": 120,
+    "Promotion Price ($)": 100,
+    "Shipping ($)": 18,
+    "Sold Price ($)": 180,
+    "TB Price ($)":
+    {
+      "Price": 175,
+      "Link": "http://doc.qt.io/qt-4.8/qt.html#ToolButtonStyle-enum"
+    },
+    "TM Price ($)":
+    {
+      "Price": 175,
+      "Link": "http://doc.qt.io/qt-4.8/qt.html#ToolButtonStyle-enum"
+    },
+    "JD Price ($)":
+    {
+      "Price": 175,
+      "Link": "http://doc.qt.io/qt-4.8/qt.html#ToolButtonStyle-enum"
+    },
+    "Profit ($)": "",
+    "Description": "-Kors Studio Collection\n-Bonded Pebbled Leather\n-18K Hardware\n- 10.5\"W X 8\"H X 3.5\"D\n-Handle 6.5\"\n-Adjustable Strap: 18\"-20.5\"\n-Lining: 100% Polyester"
+  }
+}

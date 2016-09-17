@@ -1066,6 +1066,8 @@ class Table(QtGui.QTableWidget):
         super(Table, self).__init__(parent)
         if watermark:
             pass
+        self.horizontalHeader().setStretchLastSection(True)
+        self.setSortingEnabled(True)
 
     def get_vertical_headers(self):
         """

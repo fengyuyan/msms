@@ -199,7 +199,7 @@ class List(QListWidget):  #pylint: disable=R0904
         for type_item in range(len(list_items)):
             if icon is None:
                 list_items[type_item].setIcon(QIcon( \
-                    ":/res/images/check.png"))
+                    ":/res/check.png"))
             else:
                 list_items[type_item].setIcon(icon)
             self.insertItem(type_item, list_items[type_item])
