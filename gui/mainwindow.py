@@ -1,7 +1,7 @@
 __author__ = 'Tom Yan'
 
-from PyQt4.QtGui import QMainWindow, QStackedWidget, QIcon, QToolBar, QLineEdit, QWidget, QHBoxLayout
-from PyQt4.QtCore import Qt
+from PyQt4.QtGui import QMainWindow, QStackedWidget, QIcon, QToolBar, QLabel, QWidget, QHBoxLayout, QMovie
+from PyQt4.QtCore import Qt, QSize
 from productmgr.productmgrwindow import ProductMgrWnd
 from gui.about import APP_NAME, APP_VERSION
 from widgets.button import ToolButton
@@ -19,12 +19,22 @@ class Toolbar(QToolBar):
     def __init__(self, parent=None):
         super(Toolbar, self).__init__(parent)
         self.function_btns = []
-        self.product_mgr_btn = self.add_tool_button(Toolbar.FUNC_PRODUCT_MGR, ':res/category.png')
+        self.product_mgr_btn = self.add_tool_button(Toolbar.FUNC_PRODUCT_MGR)
         self.product_mgr_btn.setChecked(True)
-        self.sales_recorder_btn = self.add_tool_button(Toolbar.FUNC_SALES_RECORDER, ':res/category.png')
+        self.sales_recorder_btn = self.add_tool_button(Toolbar.FUNC_SALES_RECORDER)
         self.stat_btn = self.add_tool_button(Toolbar.FUNC_STAT)
         self.utility_btn = self.add_tool_button(Toolbar.FUNC_UTILITY)
         self.icon_stack = QStackedWidget(self)
+
+        self.birthday_label = QLabel('Every Day is Birthday!')
+        font = self.birthday_label.font()
+        font.setBold(True)
+        self.birthday_label.setFont(font)
+        self.birthday_gif = QLabel()
+        gif_movie = QMovie(':res/cake.gif')
+        gif_movie.start()
+        gif_movie.setScaledSize(QSize(32, 32))
+        self.birthday_gif.setMovie(gif_movie)
 
         toolbar_widget = QWidget(self)
         toolbar_layout = QHBoxLayout(toolbar_widget)
@@ -33,6 +43,9 @@ class Toolbar(QToolBar):
         toolbar_layout.addWidget(self.sales_recorder_btn)
         toolbar_layout.addWidget(self.stat_btn)
         toolbar_layout.addWidget(self.utility_btn)
+        toolbar_layout.addStretch()
+        toolbar_layout.addWidget(self.birthday_label)
+        toolbar_layout.addWidget(self.birthday_gif)
         toolbar_layout.addStretch()
         toolbar_layout.addWidget(self.icon_stack)
         self.addWidget(toolbar_widget)
@@ -86,8 +99,8 @@ class MainWindow(QMainWindow):
         self.switch_window(Toolbar.FUNC_PRODUCT_MGR)
         self.setWindowIcon(QIcon(':res/app.png'))
         self.setWindowTitle(APP_NAME + ' ' + APP_VERSION)
-        # self.setWindowState((self.windowState() & ~(Qt.WindowMinimized | Qt.WindowFullScreen)) |
-        #                         Qt.WindowMaximized)
+        self.setWindowState((self.windowState() & ~(Qt.WindowMinimized | Qt.WindowFullScreen)) |
+                                Qt.WindowMaximized)
 
     def switch_window(self, func_text):
         """

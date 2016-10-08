@@ -1,0 +1,32 @@
+{
+  "File Type": "Product Information File",
+  "Creation Date": "05-19-2016, 14:55:48", 
+  "Version": "2016.1",
+  "Info":
+  {
+    "Name": "Milk",
+    "Brand": "Similac",
+    "Store/Link": "Target",
+    "Purchase Price ($)": 220,
+    "Promotion Price ($)": 200,
+    "Shipping ($)": 18,
+    "Sold Price ($)": 280,
+    "TB Price ($)":
+    {
+      "Price": 275,
+      "Link": "http://doc.qt.io/qt-4.8/qt.html#ToolButtonStyle-enum"
+    },
+    "TM Price ($)":
+    {
+      "Price": 275,
+      "Link": "http://doc.qt.io/qt-4.8/qt.html#ToolButtonStyle-enum"
+    },
+    "JD Price ($)":
+    {
+      "Price": 275,
+      "Link": "http://doc.qt.io/qt-4.8/qt.html#ToolButtonStyle-enum"
+    },
+    "Profit ($)": "",
+    "Description": "-Naturally abundant in most breast milk\n-Supports the immune system in the gut and it circulates throughout the baby body\n-Backed by more than 15 years of extensive research\n-Adds another layer to Similac already proven immune support"
+  }
+}

@@ -125,6 +125,9 @@ class DescriptionWidget(QtGui.QSplitter):
         self.notes_widget = DescriptionNotesWidget(self)
         self.addWidget(self.chart_widget)
         self.addWidget(self.notes_widget)
+        self.setSizes([600, 300])
+        # self.setStretchFactor(0, 100)
+        # self.setStretchFactor(1, 1)
 
     def load_description(self, product_folder, info):
         """

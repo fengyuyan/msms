@@ -9,5 +9,7 @@
     <file>res/save_all.png</file>
     <file>res/trash_can.png</file>
     <file>res/category.png</file>
+    <file>res/happy_birthday.gif</file>
+    <file>res/cake.gif</file>
   </qresource>
 </RCC>
